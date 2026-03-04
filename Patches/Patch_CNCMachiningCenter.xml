@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/RecipeDef[
+		defName="MEXY_Synthetizing_GravilatticeAlloy" or 
+		defName="MEXY_Synthetizing_GravilatticeSilk" or 
+		defName="MEXY_Synthetizing_PsycholuxCrystal" or 
+		defName="MEXY_Synthetizing_OverloadCrystal" or 
+		defName="MEXY_Synthetizing_OracleCrystal" or 
+		defName="MEXY_Synthetizing_MiracleCrystal" or
+    ]/recipeUsers</xpath>
+    <value>
+      <li>Milira_CNCMachiningCenter</li>
+    </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[
+		defName="MEXY_Aetherim_Judicator" or
+		defName="MEXY_Annihilation_Storm" or
+		defName="MEXY_SanctisSigil"
+		]/recipeMaker/recipeUsers</xpath>
+    <value>
+      <li>Milira_CNCMachiningCenter</li>
+    </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[
+		defName="MEXY_Luxplume_Array" or
+		defName="MEXY_Psyonic_Tuner" or
+		defName="MEXY_CognitiveDelugeRegulator" or
+		defName="MEXY_ShieldCore_Melee" or
+		defName="MEXY_ShieldCore_Ranged" or
+		defName="MEXY_Space_Folder_I" or
+		defName="MEXY_Space_Folder_II" or
+		defName="MEXY_Space_Folder_III"
+		]/recipeMaker</xpath>
+    <value>
+      <recipeUsers>
+        <li>Milira_CNCMachiningCenter</li>
+      </recipeUsers>
+    </value>
+  </Operation>
+</Patch>

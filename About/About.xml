@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ModMetaData>
+	<name>Xiyue's Milira Expanded CNC Patch</name>
+	<author>Clydus</author>
+	<packageId>Clydus.MEXY.CNC.Patch</packageId>
+	<supportedVersions>
+		<li>1.6</li>
+	</supportedVersions>
+	<description>既然CNC加工中心是太陽熔爐的升級版，為什麼不能製造聖印記呢？這個補丁將Xiyue的米莉拉擴展中在太陽熔爐製作的配方添加進瓦萊麗的米莉拉擴展包的CNC加工中心中。\n\nIf CNC Machining Center is an upgraded version of Sun Blast Furnace. Why can Sanctis Sigil be made in it? This patch adds recipes that made in Sun Blast Furnace from Xiyue's Milira Expanded mod to CNC Machining Center from Valerie's Milira Expanded mod.</description>
+	<modDependencies>
+		<li>
+			<packageId>valeries.miliraexpansion</packageId>
+			<displayName>瓦莱丽的米莉拉扩展包</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3422615030</steamWorkshopUrl>
+		</li>
+		<li>
+			<packageId>xiyueym.miliraexpandedxy</packageId>
+			<displayName>Xiyue's Milira Expanded</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3560043283</steamWorkshopUrl>
+		</li>
+	</modDependencies>
+	<loadAfter>
+		<li>Xiyue.Milira.Expanded</li>
+		<li>Valerie.Milira.Expanded</li>
+	</loadAfter>
+</ModMetaData>
